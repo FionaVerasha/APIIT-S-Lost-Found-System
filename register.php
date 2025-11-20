@@ -52,17 +52,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Register | APIIT Lost & Found</title>
+    <title>Register | APIIT LOST & FOUND</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-slate-900 text-white">
+<body class="relative min-h-screen bg-cover bg-center bg-no-repeat" 
+      style="background-image: url('https://www.ncuk.ac.uk/wp-content/uploads/2021/05/APIIT-1-900x1018.jpg');">
 
-<div class="min-h-screen flex items-center justify-center p-4">
-    <div class="w-full max-w-md bg-slate-800 p-6 rounded-2xl shadow-xl">
+<div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
 
-        <h2 class="text-3xl font-bold text-center mb-2">APIIT Lost & Found</h2>
+<div class="relative min-h-screen flex items-center justify-center p-4">
+    <div class="w-full max-w-md bg-slate-800/80 backdrop-blur-md p-6 rounded-2xl shadow-xl">
+
+        <!-- Title updated -->
+        <h2 class="text-3xl font-bold text-center mb-2 text-white">APIIT LOST & FOUND</h2>
+
         <p class="text-center text-slate-300 mb-6 text-sm sm:text-base">
             Create your account
         </p>
@@ -82,37 +87,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <form method="POST" class="space-y-4">
 
             <div>
-                <label class="text-sm">Full Name</label>
+                <label class="text-sm text-white">Full Name</label>
                 <input type="text" name="full_name" 
-                       class="w-full p-3 rounded-lg bg-slate-900 border border-slate-700 mt-1 text-sm sm:text-base"
+                       class="w-full p-3 rounded-lg bg-slate-900 border border-slate-700 mt-1 text-white placeholder-slate-400"
                        required>
             </div>
 
             <div>
-                <label class="text-sm">Email</label>
+                <label class="text-sm text-white">Email</label>
                 <input type="email" name="email" 
-                       class="w-full p-3 rounded-lg bg-slate-900 border border-slate-700 mt-1 text-sm sm:text-base"
+                       class="w-full p-3 rounded-lg bg-slate-900 border border-slate-700 mt-1 text-white placeholder-slate-400"
                        required>
             </div>
 
             <div>
-                <label class="text-sm">Username</label>
+                <label class="text-sm text-white">Username</label>
                 <input type="text" name="username" 
-                       class="w-full p-3 rounded-lg bg-slate-900 border border-slate-700 mt-1 text-sm sm:text-base"
+                       class="w-full p-3 rounded-lg bg-slate-900 border border-slate-700 mt-1 text-white placeholder-slate-400"
                        required>
             </div>
 
             <div>
-                <label class="text-sm">Password</label>
+                <label class="text-sm text-white">Password</label>
                 <input type="password" name="password" 
-                       class="w-full p-3 rounded-lg bg-slate-900 border border-slate-700 mt-1 text-sm sm:text-base"
+                       class="w-full p-3 rounded-lg bg-slate-900 border border-slate-700 mt-1 text-white placeholder-slate-400"
                        required>
             </div>
 
             <div>
-                <label class="text-sm">Confirm Password</label>
+                <label class="text-sm text-white">Confirm Password</label>
                 <input type="password" name="confirm_password" 
-                       class="w-full p-3 rounded-lg bg-slate-900 border border-slate-700 mt-1 text-sm sm:text-base"
+                       class="w-full p-3 rounded-lg bg-slate-900 border border-slate-700 mt-1 text-white placeholder-slate-400"
                        required>
             </div>
 
